@@ -61,8 +61,8 @@ ORDER BY
  i.total DESC; 
  
 -- Answer to Question 4
-| C.FN   | C.LN | E.FN  | E.LN| Transaction |  
-| ------ | ---- | ----- | --- | ----------- |
+| C.FN   | C.LN | E.FN  | E.LN| Total |  
+| ------ | ------ | ------ | ------ | ------ |
 | John	| Doeein | | Jane | Peacock | 1000.86 |
 | Richard	Cunningham	Margaret	Park	23.86
 | Hugh	O'Reilly	Jane	Peacock	21.86
