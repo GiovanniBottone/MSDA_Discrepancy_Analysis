@@ -34,7 +34,7 @@ Customers handled by Jane Peacock:
 | Michelle | Brooks	    |   Jane	|  Peacock	|     2.97	    |        0.45   |
 
 
-Jane Peacocks customers largest purchase:
+Jane Peacocks largest sale:
 | C.FN  |   C.LN   |         E.FN |   E.LN  |       Sale Amt  |      Comission |
 | ----- | -------- | ------------ | ------- | --------------- | -------------- | 
 | John	 |  Doeein	 |        Jane	 | Peacock	|     1000.86	    |     150.13     |
