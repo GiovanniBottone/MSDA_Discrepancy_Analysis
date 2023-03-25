@@ -352,7 +352,7 @@ Jane	 Peacock  1331.8  199.77
 
  
  -- Question 9 - Which Employee had the highest commission?
- Jane Peacock, $199.77
+ -- Answer: Jane Peacock, $199.77
  
  
  -- Q10 - Which customers did Jane Peacock handle?
@@ -413,7 +413,7 @@ Michelle Brooks	         Jane	Peacock	    2.97	 0.45
 
   
 -- Q11 Which customer made the highest purchase?
-John Doeein
+-- AnswerL John Doeein
   
   
 -- Q12 - Does the largest purchase look suspicious?
@@ -430,8 +430,8 @@ John Doeein
  
  
  -- Q13 Who is the primary person of interest?
- Jane Peacock, Support Rep #3
+ -- Answer: Jane Peacock, Support Rep #3
  
  
  -- Q14 - Who is responsible for the financial discrepancy?
- Jane Peacock, based on the results of this finding.
+ -- Answer: Jane Peacock, based on the results of this finding.
