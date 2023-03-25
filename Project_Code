@@ -313,6 +313,7 @@ ORDER BY
  
 -- Answer to Question 7:
 E.FN    E.LN    Amt
+----------------------
 Steve	Johnson	100.1
 Margare	Park	139.74
 Jane	Peacock	1137.65
@@ -344,6 +345,7 @@ ORDER BY
  
  -- Answer to Question 8:
 E.FN     E.LN     Sale   Comission
+----------------------------------
 Steve	 Johnson  293.2	  43.98
 Margaret Park	  322.97  48.45
 Jane	 Peacock  1331.8  199.77
@@ -385,6 +387,7 @@ Jane	 Peacock  1331.8  199.77
   
 -- Answer to Question 10
 C.FN     C.LN            E.FN   E.LN        Sale Amt    Comission
+-----------------------------------------------------------------
 John	 Doeein	         Jane	Peacock	    1000.86	 150.13
 Hugh	 O'Reilly        Jane	Peacock	    32.75	 4.91
 Wyatt	 Girard	         Jane	Peacock	    26.75	 4.01
@@ -422,6 +425,7 @@ John Doeein
  
  -- Answer to Question 12
  ID	FN	LN	Company	  Add.  City  St.   Cty.  Zip   P#   Fax  Rep-ID
+ -------------------------------------------------------------------------------
  60	John	Doeein	Null	  Null	Null  Null  Null  Null	Null Null   3
  
  
