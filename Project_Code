@@ -20,7 +20,7 @@ SELECT
 -- Answer to Question 2: $1,947.97 was made between 1-1-2011 - 12-31-2012
    
       
- -- Question 3 - Which customers made a purchase between 2011 - 2012 
+ -- Question 3 - How many customers made a purchase between 2011 - 2012 
   SELECT
   c.FirstName,
   c.LastName,
@@ -234,7 +234,6 @@ Jennifer  Peterson	Jane	 Peacock 	0.99
  
 -- Question 5 - How many transactions are above the average transaction during this period?
 -- Question 5a - What is the average transaction amount between 2011 - 2012
--- Question 5b - How many transactions are above the average transaction amount?
  
  -- 5a: What is the average transaction amount between 2011 - 2012
  SELECT 
@@ -264,7 +263,7 @@ WHERE
 AND 
  InvoiceDate >='2011-01-01' AND InvoiceDate <='2012-12-31';
  
--- Answer to Question 5b: 26 transactions were above the avg amount between 2011 - 2012
+-- Answer to Question 5: 26 transactions were above the average amount between 2011 - 2012
  
  
 -- Question 6 - What was the average transaction amount for each year that MSDA Music has been in business?
