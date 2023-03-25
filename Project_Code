@@ -6,10 +6,10 @@ SELECT
  WHERE 
   InvoiceDate >='2011-01-01' AND InvoiceDate <='2012-12-31'
   
--- Answer to Question 1 = 167 transactions took plcae between 1-1-2011 - 12-31-2012
+-- Answer to Question 1: 167 transactions took plcae between 1-1-2011 - 12-31-2012
   
   
--- Question 2 - How mucb money did MSDA Music Co make during 2011 - 2012?
+-- Question 2 - How much money did MSDA Music Co make during 2011 - 2012?
   SELECT
    SUM(Total)
   FROM
@@ -17,7 +17,7 @@ SELECT
   WHERE 
    InvoiceDate >='2011-01-01' AND InvoiceDate <='2012-12-31'
    
--- Answer to Question 2 = $1,947.97 was made between 1-1-2011 - 12-31-2012
+-- Answer to Question 2: $1,947.97 was made between 1-1-2011 - 12-31-2012
    
       
  -- Question 3 - Which customers made a purchase between 2011 - 2012 
@@ -35,7 +35,7 @@ WHERE
 ORDER BY 
  i.Total DESC;
  
--- Answer to Question 3 - 167 Customers made purchases between 1-1-2011 - 12-31-2012
+-- Answer to Question 3: 167 Customers made purchases between 1-1-2011 - 12-31-2012
  
  
 -- Question 4 - Which sales reps are involved in the purchases between 2011 - 2012? Obtain a list of customers, sales reps, and total transactions for each customer from 2011 - 2012
@@ -60,176 +60,176 @@ WHERE
 ORDER BY 
  i.total DESC; 
  
--- Answer to Question 4
-| C.FN   | C.LN | E.FN  | E.LN| Total |  
-| ------ | ------ | ------ | ------ | ------ |
-| John	| Doeein | | Jane | Peacock | 1000.86 |
-| Richard	Cunningham	Margaret	Park	23.86
-| Hugh	O'Reilly	Jane	Peacock	21.86
-| Victor	Stevens	Steve	Johnson	18.86
-| František	Wichterlová	Margaret	Park	16.86
-| Isabelle	Mercier	Jane	Peacock	16.86
-| Bjørn	Hansen	Margaret	Park	15.86
-| Fynn	Zimmermann	Jane	Peacock	14.91
-| Enrique	Muñoz	Steve	Johnson	13.86
-| Robert	Brown	Jane	Peacock	13.86
-| Daan	Peeters	Margaret	Park	13.86
-| Wyatt	Girard	Jane	Peacock	13.86
-| Kathy	Chase	Steve	Johnson	13.86
-| Puja	Srivastava	Jane	Peacock	13.86
-| Niklas	Schröder	Jane	Peacock	13.86
-| Jack	Smith	Steve	Johnson	13.86
-| Mark	Taylor	Margaret	Park	13.86
-| João	Fernandes	Margaret	Park	13.86
-| Fernanda	Ramos	Margaret	Park	13.86
-| Joakim	Johansson	Steve	Johnson	13.86
-| Edward	Francis	Jane	Peacock	13.86
-| Kara	Nielsen	Margaret	Park	13.86
-| Lucas	Mancini	Steve	Johnson	13.86
-| Heather	Leacock	Margaret	Park	13.86
-| Luís	Gonçalves	Jane	Peacock	13.86
-| Julia	Barnett	Steve	Johnson	11.94
-| Jack	Smith	Steve	Johnson	10.91
-| João	Fernandes	Margaret	Park	10.91
-| Johannes	Van der Berg	Steve	Johnson	8.94
-| Marc	Dubois	Steve	Johnson	8.91
-| Dan	Miller	Margaret	Park	8.91
-| Manoj	Pareek	Jane	Peacock	8.91
-| Frank	Harris	Margaret	Park	8.91
-| Steve	Murray	Steve	Johnson	8.91
-| Ellie	Sullivan	Jane	Peacock	8.91
-| Roberto	Almeida	Jane	Peacock	8.91
-| Enrique	Muñoz	Steve	Johnson	8.91
-| Robert	Brown	Jane	Peacock	8.91
-| Daan	Peeters	Margaret	Park	8.91
-| Hugh	O'Reilly	Jane	Peacock	8.91
-| Victor	Stevens	Steve	Johnson	8.91
-| Bjørn	Hansen	Margaret	Park	8.91
-| Wyatt	Girard	Jane	Peacock	8.91
-| Kathy	Chase	Steve	Johnson	8.91
-| Puja	Srivastava	Jane	Peacock	8.91
-| Niklas	Schröder	Jane	Peacock	8.91
-| Mark	Taylor	Margaret	Park	8.91
-| Fernanda	Ramos	Margaret	Park	8.91
-| Joakim	Johansson	Steve	Johnson	8.91
-| Terhi	Hämäläinen	Jane	Peacock	7.96
-| Frank	Ralston	Jane	Peacock	7.96
-| Madalena	Sampaio	Margaret	Park	5.94
-| Mark	Philips	Steve	Johnson	5.94
-| Emma	Jones	Jane	Peacock	5.94
-| Martha	Silk	Steve	Johnson	5.94
-| Eduardo	Martins	Margaret	Park	5.94
-| Patrick	Gray	Margaret	Park	5.94
-| Helena	Holý	Steve	Johnson	5.94
-| Terhi	Hämäläinen	Jane	Peacock	5.94
-| John	Gordon	Margaret	Park	5.94
-| Leonie	Köhler	Steve	Johnson	5.94
-| Dominique	Lefebvre	Margaret	Park	5.94
-| Tim	Goyer	Jane	Peacock	5.94
-| Luis	Rojas	Steve	Johnson	5.94
-| Hannah	Schneider	Steve	Johnson	5.94
-| Jennifer	Peterson	Jane	Peacock	5.94
-| Phil	Hughes	Jane	Peacock	5.94
-| Aaron	Mitchell	Margaret	Park	5.94
-| Alexandre	Rocha	Steve	Johnson	5.94
-| Stanisław	Wójcik	Margaret	Park	5.94
-| Astrid	Gruber	Steve	Johnson	5.94
-| Ladislav	Kovács	Jane	Peacock	5.94
-| Frank	Ralston	Jane	Peacock	5.94
-| Wyatt	Girard	Jane	Peacock	3.98
-| Dan	Miller	Margaret	Park	3.98
-| Heather	Leacock	Margaret	Park	3.98
-| Martha	Silk	Steve	Johnson	3.96
-| Eduardo	Martins	Margaret	Park	3.96
-| Johannes	Van der Berg	Steve	Johnson	3.96
-| Patrick	Gray	Margaret	Park	3.96
-| Helena	Holý	Steve	Johnson	3.96
-| John	Gordon	Margaret	Park	3.96
-| Leonie	Köhler	Steve	Johnson	3.96
-| Dominique	Lefebvre	Margaret	Park	3.96
-| Tim	Goyer	Jane	Peacock	3.96
-| Luis	Rojas	Steve	Johnson	3.96
-| Hannah	Schneider	Steve	Johnson	3.96
-| Jennifer	Peterson	Jane	Peacock	3.96
-| Phil	Hughes	Jane	Peacock	3.96
-| Aaron	Mitchell	Margaret	Park	3.96
-| Alexandre	Rocha	Steve	Johnson	3.96
-| Stanisław	Wójcik	Margaret	Park	3.96
-| Julia	Barnett	Steve	Johnson	3.96
-| Astrid	Gruber	Steve	Johnson	3.96
-| Ladislav	Kovács	Jane	Peacock	3.96
-| François	Tremblay	Jane	Peacock	3.96
-| Marc	Dubois	Steve	Johnson	3.96
-| Dan	Miller	Margaret	Park	3.96
-| Dominique	Lefebvre	Margaret	Park	2.98
-| Camille	Bernard	Margaret	Park	1.99
-| Tim	Goyer	Jane	Peacock	1.99
-| Patrick	Gray	Margaret	Park	1.98
-| Robert	Brown	Jane	Peacock	1.98
-| Helena	Holý	Steve	Johnson	1.98
-| Daan	Peeters	Margaret	Park	1.98
-| Terhi	Hämäläinen	Jane	Peacock	1.98
-| Hugh	O'Reilly	Jane	Peacock	1.98
-| John	Gordon	Margaret	Park	1.98
-| Victor	Stevens	Steve	Johnson	1.98
-| Leonie	Köhler	Steve	Johnson	1.98
-| Bjørn	Hansen	Margaret	Park	1.98
-| Tim	Goyer	Jane	Peacock	1.98
-| Kathy	Chase	Steve	Johnson	1.98
-| Luis	Rojas	Steve	Johnson	1.98
-| Puja	Srivastava	Jane	Peacock	1.98
-| Hannah	Schneider	Steve	Johnson	1.98
-| Niklas	Schröder	Jane	Peacock	1.98
-| Jennifer	Peterson	Jane	Peacock	1.98
-| Jack	Smith	Steve	Johnson	1.98
-| Phil	Hughes	Jane	Peacock	1.98
-| Mark	Taylor	Margaret	Park	1.98
-| Aaron	Mitchell	Margaret	Park	1.98
-| João	Fernandes	Margaret	Park	1.98
-| Alexandre	Rocha	Steve	Johnson	1.98
-| Fernanda	Ramos	Margaret	Park	1.98
-| Stanisław	Wójcik	Margaret	Park	1.98
-| Joakim	Johansson	Steve	Johnson	1.98
-| Julia	Barnett	Steve	Johnson	1.98
-| Edward	Francis	Jane	Peacock	1.98
-| Astrid	Gruber	Steve	Johnson	1.98
-| Kara	Nielsen	Margaret	Park	1.98
-| Ladislav	Kovács	Jane	Peacock	1.98
-| Lucas	Mancini	Steve	Johnson	1.98
-| Frank	Ralston	Jane	Peacock	1.98
-| Richard	Cunningham	Margaret	Park	1.98
-| François	Tremblay	Jane	Peacock	1.98
-| František	Wichterlová	Margaret	Park	1.98
-| Marc	Dubois	Steve	Johnson	1.98
-| Isabelle	Mercier	Jane	Peacock	1.98
-| Manoj	Pareek	Jane	Peacock	1.98
-| Luís	Gonçalves	Jane	Peacock	1.98
-| Fynn	Zimmermann	Jane	Peacock	1.98
-| Camille	Bernard	Margaret	Park	1.98
-| Frank	Harris	Margaret	Park	1.98
-| Michelle	Brooks	Jane	Peacock	1.98
-| Richard	Cunningham	Margaret	Park	0.99
-| František	Wichterlová	Margaret	Park	0.99
-| Isabelle	Mercier	Jane	Peacock	0.99
-| Heather	Leacock	Margaret	Park	0.99
-| Luís	Gonçalves	Jane	Peacock	0.99
-| Michelle	Brooks	Jane	Peacock	0.99
-| Diego	Gutiérrez	Margaret	Park	0.99
-| Madalena	Sampaio	Margaret	Park	0.99
-| Mark	Philips	Steve	Johnson	0.99
-| Emma	Jones	Jane	Peacock	0.99
-| Martha	Silk	Steve	Johnson	0.99
-| Eduardo	Martins	Margaret	Park	0.99
-| Johannes	Van der Berg	Steve	Johnson	0.99
-| Patrick	Gray	Margaret	Park	0.99
-| Helena	Holý	Steve	Johnson	0.99
-| Terhi	Hämäläinen	Jane	Peacock	0.99
-| John	Gordon	Margaret	Park	0.99
-| Leonie	Köhler	Steve	Johnson	0.99
-| Dominique	Lefebvre	Margaret	Park	0.99
-| Luis	Rojas	Steve	Johnson	0.99
-| Hannah	Schneider	Steve	Johnson	0.99
-| Jennifer	Peterson	Jane	Peacock	0.99
+-- Answer to Question 4:
+C_FN      C_LN          E_FN     E_LN           $ Amt
+-------------------------------------------------------
+John	  Doeein	Jane	 Peacock	1000.86
+Richard	  Cunningham	Margaret Park	        23.86
+Hugh	  O'Reilly	Jane	 Peacock	21.86
+Victor	  Stevens	Steve	 Johnson	18.86
+František Wichterlová	Margaret Park		16.86
+Isabelle  Mercier	Jane	 Peacock	16.86
+Bjørn	  Hansen	Margaret Park		15.86
+Fynn	  Zimmermann	Jane	 Peacock	14.91
+Enrique	  Muñoz	        Steve	 Johnson	13.86
+Robert	  Brown	        Jane	 Peacock	13.86
+Daan	  Peeters	Margaret Park		13.86
+Wyatt	  Girard	Jane	 Peacock	13.86
+Kathy	  Chase	        Steve	 Johnson	13.86
+Puja	  Srivastava	Jane	 Peacock	13.86
+Niklas	  Schröder	Jane	 Peacock	13.86
+Jack	  Smith	        Steve	 Johnson	13.86
+Mark	  Taylor	Margaret Park		13.86
+João	  Fernandes	Margaret Park		13.86
+Fernanda  Ramos	        Margaret Park		13.86
+Joakim	  Johansson	Steve	 Johnson	13.86
+Edward	  Francis	Jane	 Peacock	13.86
+Kara	  Nielsen	Margaret Park		13.86
+Lucas	  Mancini	Steve	 Johnson	13.86
+Heather	  Leacock	Margaret Park		13.86
+Luís	  Gonçalves	Jane	 Peacock	13.86
+Julia	  Barnett	Steve	 Johnson	11.94
+Jack	  Smith	        Steve	 Johnson	10.91
+João	  Fernandes	Margaret Park		10.91
+Johannes  Van der Berg	Steve	 Johnson	8.94
+Marc	  Dubois	Steve	 Johnson	8.91
+Dan	  Miller	Margaret Park		8.91
+Manoj	  Pareek	Jane	 Peacock	8.91
+Frank	  Harris	Margaret Park		8.91
+Steve	  Murray	Steve	 Johnson	8.91
+Ellie	  Sullivan	Jane	 Peacock	8.91
+Roberto	  Almeida	Jane	 Peacock	8.91
+Enrique	  Muñoz	        Steve	 Johnson	8.91
+Robert	  Brown	        Jane	 Peacock	8.91
+Daan	  Peeters	Margaret Park		8.91
+Hugh	  O'Reilly	Jane	 Peacock	8.91
+Victor	  Stevens	Steve	 Johnson	8.91
+Bjørn	  Hansen	Margaret Park		8.91
+Wyatt	  Girard	Jane	 Peacock	8.91
+Kathy	  Chase	        Steve	 Johnson	8.91
+Puja	  Srivastava	Jane	 Peacock	8.91
+Niklas	  Schröder	Jane	 Peacock	8.91
+Mark	  Taylor	Margaret Park		8.91
+Fernanda  Ramos	        Margaret Park		8.91
+Joakim	  Johansson	Steve	 Johnson	8.91
+Terhi	  Hämäläinen	Jane	 Peacock	7.96
+Frank	  Ralston	Jane	 Peacock	7.96
+Madalena  Sampaio	Margaret Park		5.94
+Mark	  Philips	Steve	 Johnson	5.94
+Emma	  Jones	        Jane	 Peacock	5.94
+Martha	  Silk	        Steve	 Johnson	5.94
+Eduardo	  Martins	Margaret Park		5.94
+Patrick	  Gray	        Margaret Park		5.94
+Helena	  Holý	        Steve	 Johnson	5.94
+Terhi	  Hämäläinen	Jane	 Peacock	5.94
+John	  Gordon	Margaret Park		5.94
+Leonie	  Köhler	Steve	 Johnson	5.94
+Dominique Lefebvre	Margaret Park		5.94
+Tim	  Goyer	        Jane	 Peacock	5.94
+Luis	  Rojas	        Steve    Johnson	5.94
+Hannah	  Schneider	Steve	 Johnson	5.94
+Jennifer  Peterson	Jane	 Peacock	5.94
+Phil	  Hughes	Jane	 Peacock	5.94
+Aaron	  Mitchell	Margaret Park		5.94
+Alexandre  Rocha	Steve	 Johnson	5.94
+Stanisław  Wójcik	Margaret Park		5.94
+Astrid	  Gruber	Steve	 Johnson	5.94
+Ladislav  Kovács	Jane	 Peacock	5.94
+Frank	  Ralston	Jane	 Peacock	5.94
+Wyatt	  Girard	Jane	 Peacock	3.98
+Dan	  Miller	Margaret Park		3.98
+Heather	  Leacock	Margaret Park		3.98
+Martha	  Silk	        Steve	 Johnson	3.96
+Eduardo	  Martins	Margaret Park		3.96
+Johannes  Van der Berg	Steve	 Johnson	3.96
+Patrick	  Gray	        Margaret Park		3.96
+Helena	  Holý	        Steve	 Johnson	3.96
+John	  Gordon	Margaret Park		3.96
+Leonie	  Köhler	Steve	 Johnson	3.96
+Dominique Lefebvre	Margaret Park		3.96
+Tim	  Goyer	        Jane	 Peacock	3.96
+Luis	  Rojas	        Steve	 Johnson	3.96
+Hannah	  Schneider	Steve	 Johnson	3.96
+Jennifer  Peterson	Jane	 Peacock	3.96
+Phil	  Hughes	Jane	 Peacock	3.96
+Aaron	  Mitchell	Margaret Park		3.96
+Alexandre Rocha	        Steve	 Johnson	3.96
+Stanisław Wójcik	Margaret Park		3.96
+Julia	  Barnett	Steve	 Johnson	3.96
+Astrid	  Gruber	Steve	 Johnson	3.96
+Ladislav  Kovács	Jane	 Peacock	3.96
+François  Tremblay	Jane	 Peacock	3.96
+Marc	  Dubois	Steve	 Johnson	3.96
+Dan	  Miller	Margaret Park		3.96
+Dominique Lefebvre	Margaret Park		2.98
+Camille	  Bernard	Margaret Park		1.99
+Tim	  Goyer	        Jane	 Peacock	1.99
+Patrick	  Gray	        Margaret Park		1.98
+Robert	  Brown	        Jane	 Peacock	1.98
+Helena	  Holý	        Steve	 Johnson	1.98
+Daan	  Peeters	Margaret Park		1.98
+Terhi	  Hämäläinen	Jane	 Peacock	1.98
+Hugh	  O'Reilly	Jane	 Peacock	1.98
+John	  Gordon	Margaret Park		1.98
+Victor	  Stevens	Steve	 Johnson	1.98
+Leonie	  Köhler	Steve	 Johnson	1.98
+Bjørn	  Hansen	Margaret Park		1.98
+Tim	  Goyer	        Jane	 Peacock	1.98
+Kathy	  Chase	        Steve	 Johnson	1.98
+Luis	  Rojas	        Steve    Johnson	1.98
+Puja	  Srivastava	Jane	 Peacock	1.98
+Hannah	  Schneider	Steve	 Johnson	1.98
+Niklas	  Schröder	Jane	 Peacock	1.98
+Jennifer  Peterson	Jane	 Peacock	1.98
+Jack	  Smith	        Steve	 Johnson	1.98
+Phil	  Hughes	Jane	 Peacock	1.98
+Mark	  Taylor	Margaret Park		1.98
+Aaron	  Mitchell	Margaret Park		1.98
+João	  Fernandes	Margaret Park		1.98
+Alexandre Rocha	        Steve	 Johnson	1.98
+Fernanda  Ramos	        Margaret Park		1.98
+Stanisław Wójcik	Margaret Park		1.98
+Joakim	  Johansson	Steve	 Johnson	1.98
+Julia	  Barnett	Steve	 Johnson	1.98
+Edward	  Francis	Jane	 Peacock	1.98
+Astrid	  Gruber	Steve	 Johnson	1.98
+Kara	  Nielsen	Margaret Park		1.98
+Ladislav  Kovács	Jane	 Peacock	1.98
+Lucas	  Mancini	Steve	 Johnson	1.98
+Frank	  Ralston	Jane	 Peacock	1.98
+Richard	  Cunningham	Margaret Park		1.98
+François  Tremblay	Jane	 Peacock	1.98
+František Wichterlová	Margaret Park		1.98
+Marc	  Dubois	Steve	 Johnson	1.98
+Isabelle  Mercier	Jane	 Peacock	1.98
+Manoj	  Pareek	Jane	 Peacock	1.98
+Luís	  Gonçalves	Jane	 Peacock	1.98
+Fynn	  Zimmermann	Jane	 Peacock	1.98
+Camille	  Bernard	Margaret Park		1.98
+Frank	  Harris	Margaret Park		1.98
+Michelle  Brooks	Jane	 Peacock	1.98
+Richard	  Cunningham	Margaret Park		0.99
+František Wichterlová	Margaret Park		0.99
+Isabelle  Mercier	Jane	 Peacock	0.99
+Heather	  Leacock	Margaret Park		0.99
+Luís	  Gonçalves	Jane	 Peacock	0.99
+Michelle  Brooks	Jane	 Peacock	0.99
+Diego	  Gutiérrez	Margaret Park		0.99
+Madalena  Sampaio	Margaret Park 		0.99
+Mark	  Philips	Steve	 Johnson 	0.99
+Emma	  Jones	        Jane	 Peacock 	0.99
+Martha	  Silk	        Steve	 Johnson 	0.99
+Eduardo	  Martins	Margaret Park    	0.99
+Johannes  Van der Berg	Steve	 Johnson 	0.99
+Patrick	  Gray	        Margaret Park 	 	0.99
+Helena	  Holý	        Steve	 Johnson 	0.99
+Terhi	  Hämäläinen	Jane	 Peacock 	0.99
+John	  Gordon	Margaret Park	 	0.99
+Leonie	  Köhler	Steve	 Johnson 	0.99
+Dominique Lefebvre	Margaret Park	 	0.99
+Luis	  Rojas	        Steve	 Johnson 	0.99
+Hannah	  Schneider	Steve	 Johnson 	0.99
+Jennifer  Peterson	Jane	 Peacock 	0.99
  
  
 -- Question 5 - How many transactions are above the average transaction during this period?
@@ -244,7 +244,7 @@ ORDER BY
  WHERE
   InvoiceDate >='2011-01-01' AND InvoiceDate <='2012-12-31'
   
--- Answer to Question 5a - Avg Transaction Amt = $11.66
+-- Answer to Question 5a: Avg Transaction Amt = $11.66
 
 
 -- 5b: How many transactions are above the average transaction amount?
@@ -264,7 +264,7 @@ WHERE
 AND 
  InvoiceDate >='2011-01-01' AND InvoiceDate <='2012-12-31';
  
--- Answer to Question 5b - 26 transactions were above the avg amount between 2011 - 2012
+-- Answer to Question 5b: 26 transactions were above the avg amount between 2011 - 2012
  
  
 -- Question 6 - What was the average transaction amount for each year that MSDA Music has been in business?
@@ -276,7 +276,9 @@ FROM
 GROUP BY
  strftime('%Y',InvoiceDate)
  
--- Answer to Question 6 
+-- Answer to Question 6:
+Avg     Year
+------------
 5.42	2009
 5.8	2010
 17.51	2011
@@ -309,9 +311,10 @@ GROUP BY
 ORDER BY 
  e.LastName;
  
--- Answer to Question 7
+-- Answer to Question 7:
+E.FN    E.LN    Amt
 Steve	Johnson	100.1
-Margaret	Park	139.74
+Margare	Park	139.74
 Jane	Peacock	1137.65
 
 
@@ -339,10 +342,11 @@ GROUP BY
 ORDER BY 
  e.LastName;
  
- -- Answer to Question 8
-Steve	Johnson	293.2	43.98
-Margaret	Park	322.97	48.45
-Jane	Peacock	1331.8	199.77
+ -- Answer to Question 8:
+E.FN     E.LN     Sale   Comission
+Steve	 Johnson  293.2	  43.98
+Margaret Park	  322.97  48.45
+Jane	 Peacock  1331.8  199.77
 
  
  -- Question 9 - Which Employee had the highest commission?
@@ -380,28 +384,29 @@ Jane	Peacock	1331.8	199.77
   [Total Sales] DESC;
   
 -- Answer to Question 10
-John	Doeein	Jane	Peacock	1000.86	150.13
-Hugh	O'Reilly	Jane	Peacock	32.75	4.91
-Wyatt	Girard	Jane	Peacock	26.75	4.01
-Niklas	Schröder	Jane	Peacock	24.75	3.71
-Puja	Srivastava	Jane	Peacock	24.75	3.71
-Robert	Brown	Jane	Peacock	24.75	3.71
-Isabelle	Mercier	Jane	Peacock	19.83	2.97
-Fynn	Zimmermann	Jane	Peacock	16.89	2.53
-Terhi	Hämäläinen	Jane	Peacock	16.87	2.53
-Luís	Gonçalves	Jane	Peacock	16.83	2.52
-Frank	Ralston	Jane	Peacock	15.88	2.38
-Edward	Francis	Jane	Peacock	15.84	2.38
-Tim	Goyer	Jane	Peacock	13.87	2.08
-Jennifer	Peterson	Jane	Peacock	12.87	1.93
-Ladislav	Kovács	Jane	Peacock	11.88	1.78
-Phil	Hughes	Jane	Peacock	11.88	1.78
-Manoj	Pareek	Jane	Peacock	10.89	1.63
-Ellie	Sullivan	Jane	Peacock	8.91	1.34
-Roberto	Almeida	Jane	Peacock	8.91	1.34
-Emma	Jones	Jane	Peacock	6.93	1.04
-François	Tremblay	Jane	Peacock	5.94	0.89
-Michelle	Brooks	Jane	Peacock	2.97	0.45
+C.FN     C.LN            E.FN   E.LN        Sale Amt    Comission
+John	 Doeein	         Jane	Peacock	    1000.86	 150.13
+Hugh	 O'Reilly        Jane	Peacock	    32.75	 4.91
+Wyatt	 Girard	         Jane	Peacock	    26.75	 4.01
+Niklas	 Schröder        Jane	Peacock	    24.75	 3.71
+Puja	 Srivastava      Jane	Peacock	    24.75	 3.71
+Robert	 Brown	         Jane	Peacock	    24.75	 3.71
+Isabelle Mercier         Jane	Peacock	    19.83	 2.97
+Fynn	 Zimmermann      Jane	Peacock	    16.89	 2.53
+Terhi	 Hämäläinen      Jane	Peacock	    16.87	 2.53
+Luís	 Gonçalves       Jane	Peacock	    16.83	 2.52
+Frank	 Ralston         Jane	Peacock	    15.88	 2.38
+Edward	 Francis         Jane	Peacock	    15.84	 2.38
+Tim	 Goyer	         Jane	Peacock	    13.87	 2.08
+Jennifer Peterson        Jane	Peacock	    12.87	 1.93
+Ladislav Kovács	         Jane	Peacock	    11.88	 1.78
+Phil	 Hughes	         Jane	Peacock	    11.88	 1.78
+Manoj	 Pareek	         Jane	Peacock	    10.89	 1.63
+Ellie	 Sullivan        Jane	Peacock	    8.91	 1.34
+Roberto	 Almeida         Jane	Peacock	    8.91	 1.34
+Emma	 Jones	         Jane	Peacock	    6.93	 1.04
+François Tremblay        Jane	Peacock	    5.94	 0.89
+Michelle Brooks	         Jane	Peacock	    2.97	 0.45
 
   
 -- Q11 Which customer made the highest purchase?
@@ -416,7 +421,8 @@ John Doeein
    c.LastName = 'Doeein';
  
  -- Answer to Question 12
- 60	John	Doeein	Null	Null	Null	Null	Null	Null	Null	Null	Null	3
+ ID	FN	LN	Company	  Add.  City  St.   Cty.  Zip   P#   Fax  Rep-ID
+ 60	John	Doeein	Null	  Null	Null  Null  Null  Null	Null Null   3
  
  
  -- Q13 Who is the primary person of interest?
