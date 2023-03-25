@@ -1,7 +1,7 @@
 # MSDA_Discrepancy_Analysis
 
 ## Summary
-MSDA Management has identified a financial discrepancy which occurred between 1-1-2011 - 12-31-2012. Our task is to identify the discrepancy, and who is responsible for it.
+MSDA Management has identified a financial discrepancy which occurred between 1-1-2011 - 12-31-2012. Our task is to identify the discrepancy, and who is responsible for it using SQL.
 
 ## Results
 After gathering total transactions for 1-1-2011 - 12-31-2012, filtering by customer, sales representative, average sale, and commission total, it's safe to assume Employee #3 - Jane Peacock - is responsible for the financial discrepancy.
